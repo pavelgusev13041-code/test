@@ -1,11 +1,14 @@
 [Unit]
-Description=Monitoring script for test process
+Description=запуск процесса test
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/monitor_test.sh
-Restart=on-failure
+ExecStart=/home/user/test/test.sh
+Restart=always
+RestartSec=60
+User=user
+Group=user
 
 [Install]
 WantedBy=multi-user.target
