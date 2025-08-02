@@ -1,4 +1,4 @@
-p#!bin/bash
+#!bin/bash
 payza=60
 #провека запуска процесса
 RABOTA=0
